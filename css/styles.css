@@ -1,0 +1,46 @@
+/* applied to elements with class=home */
+.home {
+    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* Descendant Selectors are seperated by a space */
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.5)
+}
+
+/* pseudo classes */
+section p:first-of-type{
+    color: brown;
+}
+/* applied to all p, ul elements (Selector List) */
+p, ul {
+    font-style: italic;
+    font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+/* applied to elements with class=italic-text */
+.italic-text {
+    font-style: italic;
+    font-size: 26px;
+}
+
+.button {
+    color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/* applied to elements with both of these classes */
+.button.italic-text {
+    font-weight: bold;
+}
+
+/* applied to footer element */
+footer {
+    color: black;
+    background-image: url(../images/bg-sunset-ocean.jpg);
+    background-size: 100% 100%;
+}
