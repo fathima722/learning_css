@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="home">
-    <div class="content-wrapper">
+    <div>
       <header>
         <h1>Next Page</h1>
       </header>
       <main>
         <section>
+          <h4>Unordered List with on hover css styles</h4>
           <ul>
             <li>Unordered List 1</li>
             <li>Unordered List 2</li>
             <li>Unordered List 3</li>
             <li>Unordered List 4</li>
           </ul>
-          <h4>Brands I love</h4>
+          <h4>Ordered List with on hover css styles</h4>
           <ol>
             <li>ordered List 1</li>
             <li>ordered List 2</li>
@@ -27,12 +28,39 @@
             <li>ordered List 4</li>
           </ol>
         </section>
+        <div>
+          <h4>Negative Margins with inline CSS, position and z-index properties</h4>
+          <section class="negative-margin">
+            <ul>
+              <li>Negative Margin</li>
+                <div style="background-color:rgb(176, 167, 167);width:150px;height:100px;border: 1px solid black"></div>
+                <div style="background-color:#ea7a7a;width:150px;height:100px;border: 1px solid black;margin-top:-20px;margin-left:-10px"></div>
+                <div style="background-color:lightblue;width:150px;height:100px;border: 1px solid black;margin-top:-20px"></div>
+            </ul>
+          </section>
+          <section class="neg-margin-pos" >
+            <ul>
+              <li>Absolute Position</li>
+                <div style="display:inline-block;background-color:rgb(176, 167, 167);width:150px;height:100px;border: 1px solid black"></div>
+                <div style="display:inline-block;background-color:#ea7a7a;width:150px;height:100px;border: 1px solid black;margin-bottom: -20px;margin-left:-20px"></div>
+                <div style="display:inline-block;background-color:lightblue;width:150px;height:100px;border: 1px solid black;margin-bottom:-30px;margin-left:-20px""></div>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>z-index</li>
+                <div style="display:inline-block;background-color:rgb(176, 167, 167);width:150px;height:100px;border: 1px solid black"></div>
+                <div style="display:inline-block;background-color:#ea7a7a;width:150px;height:100px;border: 1px solid black; margin: 10px -20px;position:absolute;z-index: 2"></div>
+                <div style="display:inline-block;background-color:lightblue;width:150px;height:100px;border: 1px solid black;margin: 20px -40px;position:absolute;z-index: 1"></div>
+            </ul>
+          </section>
+        </div>
       </main>
   </div>
 
     <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
     <div class="container">
-      <footer>
+      <footer style="position:fixed; right: 10px; top:10px">
           <p>© 2024 by Your Name |  <a href="mailto:email_id@email.com">email_id@email.com</a></p>
 
           <ul id="socials">
