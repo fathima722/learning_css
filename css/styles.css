@@ -1,19 +1,67 @@
-/* applied to elements with class=home */
-.home {
+/* Box Model Fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* -------------------- Main Styles --------------- */
+
+html,body{
+    height: 100%;
+}
+
+/* Applied to body element */
+body {
     background: url(../images/bg-home-office-studio.jpg) no-repeat;
-    background-size: cover;
 }
 
 /* Descendant Selectors are seperated by a space */
 .home .content-wrapper {
-    background: rgb(255 255 255 / 0.5)
+    background: rgb(255 255 255 / 0.5);
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 900px;
+    border: 1px solid black;
+}
+
+hr {
+    border-top: 1px dashed black;
+}
+
+img {
+    width: 200px; 
+    height: 200px;
+    float:left
 }
 
 /* pseudo classes */
 section p:first-of-type{
     color: brown;
 }
-/* applied to all p, ul elements (Selector List) */
+
+/* pseudo elements */
+/* p::first-letter{
+    font-size: xx-large;
+} */
+
+/* To style the first letter of just the first paragraph, we can do that by combining selectors as follows */
+
+section p:first-of-type::first-letter {
+    font-size: xx-large;
+}
+
+/* Chaning an hyperlink to look like a button */
+.link-as-button {
+    color:brown;
+    text-decoration: none;
+    background: cadetblue;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+/* Applied to all p, ul elements (Selector List) */
 p, ul {
     font-style: italic;
     font-size: medium;
@@ -30,7 +78,15 @@ p, ul {
 .button {
     color: black;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 2px solid black;
+    display: block;
+    margin: 5px;
+}
+
+.next-page {
+    display: block;
+    text-align: right;
+    font-weight: bold;
 }
 
 /* applied to elements with both of these classes */
@@ -38,9 +94,57 @@ p, ul {
     font-weight: bold;
 }
 
-/* applied to footer element */
+.next-page:hover{
+    color: cadetblue;
+}
+
+#positioning {
+    position:fixed;
+    top: 5px;
+    right:5px
+}
+
+/* ------------------ Footer styles -----------------*/
+/* adding background image to footer */
 footer {
     color: black;
-    background-image: url(../images/bg-sunset-ocean.jpg);
-    background-size: 100% 100%;
+    background: rgba(22, 21, 21, 0.5);
+    text-align: right;
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+a {
+    color: black;
+}
+
+#socials {
+    list-style-type: none; /*This will remove the bullet styles on our list items */
+}
+
+.logo {
+    width: 50px;
+    height:50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+/* -------------------- Next Page CSS ---------------------- */
+
+li:hover {
+    color:cadetblue;
+    text-decoration: underline;
+}
+
+.negative-margin{
+    display: inline-block;
+    padding-left:10px"
+}
+
+.neg-margin-pos {
+    position:absolute; 
+    right:5%;
+    top:70%
 }
