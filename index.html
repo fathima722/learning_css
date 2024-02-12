@@ -2,75 +2,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning CSS</title>
+    <title>I am CSS</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="home">
+    <!--script src="app.js"--><!--/script-->
     <div class="content-wrapper">
         <header>
-            <h1>Learning CSS</h1>
+            <h1>Hi! I am CSS</h1>
         </header>
 
         <main>
             <section>
                 <div>
                     <h1 style="text-align: center;">
-                        <img src="images/project-biz-cards-500px.jpg" srcset="images/project-biz-cards-1000px.jpg" alt="An image of project business card" style="width: 20px; height: 20px;">
-                        About Me :P
+                        Simple Concepts About Me :P
                     </h1>
+                    <hr>
                 </div>
-                <p>
-                    First Paragraph: Hello! This is a sample project created for learning HTML, CSS and JavaScript. It is beginner friendly course and has code samples with comments explaining each line of code does and what it returns respectively. The code can be found on <a href="https://github.com/fathima722/learning_classes" target="_blank">Github</a>
-                </p>
+                <div>
+                    <img src="images/project-biz-cards-500px.jpg" srcset="images/project-biz-cards-1000px.jpg" alt="An image of project business card">
+                    <p>
+                        First Paragraph with Pseudo classes and pseudo elements: Hello! This is a sample project created for learning HTML, CSS and JavaScript. It is beginner friendly course and has code samples with comments explaining each line of code does and what it returns respectively. 
+                    </p>
 
-                <p>
-                    Second Paragraph: Hello! This is a sample project created for learning HTML, CSS and JavaScript. It is beginner friendly course and has code samples with comments explaining each line of code does and what it returns respectively. The code can be found on <a href="https://github.com/fathima722/learning_classes" target="_blank">Github</a>
-                </p>
+                    <p>The code sample can be found on <a class="link-as-button" href="https://github.com/fathima722/learning_classes" target="_blank">Github</a>. Here "Github" is a hyperlink designed to look as a button and on click, it points to the Github repository for these styles.</p>
 
-                <p>
-                    Third Paragraph: Hello! This is a sample project created for learning HTML, CSS and JavaScript. It is beginner friendly course and has code samples with comments explaining each line of code does and what it returns respectively. The code can be found on <a href="https://github.com/fathima722/learning_classes" target="_blank">Github</a>
-                </p>
-        
-                <ul>
-                    <li>Unordered List 1</li>
-                    <li>Unordered List 2</li>
-                    <li>Unordered List 3</li>
-                    <li>Unordered List 4</li>
-                </ul>
-            </section>
-        
-            <section>
-                
-                <h4>Brands I love</h4>
-                <ol>
-                    <li>ordered List 1</li>
-                    <li>ordered List 1</li>
-                    <li>ordered List 1</li>
-                    <li>ordered List 1</li>
-                </ol>
+                    <p style="clear:both">
+                        Second Paragraph: The sample code for CSS core concepts, Layouts: float and position, typography, Layouts: fluid and responsive can be found here. Please pay attention to both inline and external css used here.
+                    </p>
+                </div>
             </section>
 
             <section>
-                <div class="italic-text">Subscribe for more such updates!
+                <div class="italic-text">Button with CSS styles applied on multiple classes!
                     <button class="button italic-text">
                     Subscribe
                     </button>
                 </div> 
             </section>
+
+            <a href="next.html" class="next-page">Next Page</a>
+
+            <p>
+                <a class="link-as-button" id="positioning" href="https://github.com/fathima722/learning_css">Download Code</a>
+            </p>
         </main>
     </div>
     
+    <div class="container">
         <footer>
             <p>© 2024 by Your Name |  <a href="mailto:email_id@email.com">email_id@email.com</a></p>
 
-            <ul>
+            <ul id="socials">
+                <!--Adding class logo to each list element here can help with the performance as the browser has to cycle only through one selector while applying CSS-->
                 <li>
-                    <a href="" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn Profile"></a>
+                    <a href="" target="_blank"><img src="images/icon-logo-youtube.png" alt="My LinkedIn Profile" class="logo"></a>
                 </li>
                 <li>
-                    <a href="" target="_blank"><img src="images/icon-logo-facebook.png" alt="My Facebook Profile"></a>
+                    <a href="" target="_blank"><img src="images/icon-logo-instagram.png" alt="My LinkedIn Profile" class="logo"></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><img src="images/icon-logo-facebook.png" alt="My Facebook Profile" class="logo"></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn Profile" class="logo"></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><img src="images/icon-logo-twitter.png" alt="My LinkedIn Profile" class="logo"></a>
                 </li>
             </ul>
         </footer>
+    </div>
 </body>
 </html>
