@@ -1,0 +1,24 @@
+/* -------------------- Next Page CSS ---------------------- */
+
+li:hover {
+    color:cadetblue;
+    text-decoration: underline;
+    opacity: 50%;
+}
+
+.negative-margin{
+    display: inline-block;
+    padding-left:10px"
+}
+
+.neg-margin-pos {
+    position:absolute; 
+    right:5%;
+    top:70%
+}
+
+@media (max-width:750px) {
+    .neg-margin-pos{
+        position: static;
+    }
+}

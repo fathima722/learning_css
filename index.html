@@ -3,54 +3,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I am CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body class="home">
     <!--script src="app.js"--><!--/script-->
     <div class="content-wrapper">
-        <header>
-            <h1>Hi! I am CSS</h1>
-        </header>
+        <div class="content-bg">
+            <header>
+                <h1>Hi! I am CSS 👋</h1>
+            </header>
 
-        <main>
-            <section>
-                <div>
-                    <h1 style="text-align: center;">
-                        Simple Concepts About Me :P
-                    </h1>
-                    <hr>
-                </div>
-                <div>
-                    <img src="images/project-biz-cards-500px.jpg" srcset="images/project-biz-cards-1000px.jpg" alt="An image of project business card">
-                    <p>
-                        First Paragraph with Pseudo classes and pseudo elements: Hello! This is a sample project created for learning HTML, CSS and JavaScript. It is beginner friendly course and has code samples with comments explaining each line of code does and what it returns respectively. 
-                    </p>
+            <main>
+                <section>
+                    <div>
+                        <h3 id="heading3" style="text-align: Left; padding-left: 180px">
+                            Click on the links below to know more about me &#x1F609;
+                        </h3>
+                        <hr>
+                    </div>
+                    <div>
+                        <img id="image-left" src="images/project-biz-cards-500px.jpg" srcset="images/project-biz-cards-1000px.jpg" alt="An image of project business card">
+                        <p>
+                            First Paragraph with Pseudo classes and pseudo elements: Hello! This is a sample project created for learning HTML, CSS and JavaScript. It is beginner friendly course and has code samples with comments explaining each line of code does and what it returns respectively. 
+                        </p>
 
-                    <p>The code sample can be found on <a class="link-as-button" href="https://github.com/fathima722/learning_classes" target="_blank">Github</a>. Here "Github" is a hyperlink designed to look as a button and on click, it points to the Github repository for these styles.</p>
+                        <p>The code sample can be found on <a class="link-as-button" href="https://github.com/fathima722/learning_css" target="_blank">Github</a>. Here "Github" is a hyperlink designed to look as a button and on click, it points to the Github repository for these styles.</p>
 
-                    <p style="clear:both">
-                        Second Paragraph: The sample code for CSS core concepts, Layouts: float and position, typography, Layouts: fluid and responsive can be found here. Please pay attention to both inline and external css used here.
-                    </p>
-                </div>
-            </section>
+                        <p style="clear:both">
+                            Second Paragraph: The sample code for CSS core concepts, Layouts: float and position, typography, Layouts: fluid and responsive can be found here. Please pay attention to both inline and external css used here.
+                        </p>
+                    </div>
+                </section>
 
-            <section>
-                <div class="italic-text">Button with CSS styles applied on multiple classes!
-                    <button class="button italic-text">
-                    Subscribe
-                    </button>
-                </div> 
-            </section>
+                <p>To know more about different layouts:
+                    <a href="grid.html">Flex and Grid</a>
+                </p>
+                <section>
+                    <div class="italic-text">Button with CSS styles applied on multiple classes!
+                        <button class="button italic-text">
+                        Subscribe
+                        </button>
+                    </div> 
+                </section>
 
-            <a href="next.html" class="next-page">Next Page</a>
+                <a href="next.html" class="next-page">Next Page</a>
 
-            <p>
-                <a class="link-as-button" id="positioning" href="https://github.com/fathima722/learning_css">Download Code</a>
-            </p>
-        </main>
+                <p>
+                    <a class="link-as-button" id="positioning" href="https://github.com/fathima722/learning_css/archive/refs/heads/codespace-silver-space-train-4r4jp64px6r2wj6.zip">Download Code</a>
+                </p>
+            </main>
+        </div>
     </div>
     
-    <div class="container">
         <footer>
             <p>© 2024 by Your Name |  <a href="mailto:email_id@email.com">email_id@email.com</a></p>
 
@@ -73,6 +81,5 @@
                 </li>
             </ul>
         </footer>
-    </div>
 </body>
 </html>

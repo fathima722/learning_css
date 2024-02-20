@@ -14,16 +14,45 @@ html,body{
 
 /* Applied to body element */
 body {
-    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    /* background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; */
 }
 
 /* Descendant Selectors are seperated by a space */
 .home .content-wrapper {
+    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    flex: 1 0 auto;
+    padding: 10px;
+}
+.content-bg {
     background: rgb(255 255 255 / 0.5);
     padding: 5px;
     margin: 0 auto;
     max-width: 900px;
     border: 1px solid black;
+}
+
+h1,#heading3,h4 {
+    font-family: "Caveat", cursive;
+    letter-spacing: 0.05em;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight:800;
+    background-color: azure;
+    text-align:center;
 }
 
 hr {
@@ -33,7 +62,8 @@ hr {
 img {
     width: 200px; 
     height: 200px;
-    float:left
+    float:left;
+    padding-right: 10px;
 }
 
 /* pseudo classes */
@@ -54,11 +84,13 @@ section p:first-of-type::first-letter {
 
 /* Chaning an hyperlink to look like a button */
 .link-as-button {
-    color:brown;
+    color: black;
     text-decoration: none;
     background: cadetblue;
     border-radius: 5px;
     padding: 2px;
+    text-transform: capitalize;
+    letter-spacing: .1em;
 }
 
 /* Applied to all p, ul elements (Selector List) */
@@ -67,6 +99,10 @@ p, ul {
     font-size: medium;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
+}
+
+p {
+    line-height: 1.5;
 }
 
 /* applied to elements with class=italic-text */
@@ -83,14 +119,16 @@ p, ul {
     margin: 5px;
 }
 
+/* applied to elements with both of these classes */
+.button.italic-text {
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: cadetblue;
+}
+
 .next-page {
     display: block;
     text-align: right;
-    font-weight: bold;
-}
-
-/* applied to elements with both of these classes */
-.button.italic-text {
     font-weight: bold;
 }
 
@@ -104,47 +142,29 @@ p, ul {
     right:5px
 }
 
-/* ------------------ Footer styles -----------------*/
-/* adding background image to footer */
-footer {
-    color: black;
-    background: rgba(22, 21, 21, 0.5);
-    text-align: right;
+/* media queries */
+@media screen and (max-width: 800px) {
+    .link-as-button {
+        color: brown;
+        text-transform: lowercase;
+    }
+
+    #image-left {
+        width: 100px; 
+        height: 100px;
+        float:left;
+        padding-right: 10px;
+    }
 }
 
-footer ul li{
-    display: inline-block;
-}
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    .next-page{
+        color: brown;
+    }
 
-a {
-    color: black;
-}
-
-#socials {
-    list-style-type: none; /*This will remove the bullet styles on our list items */
-}
-
-.logo {
-    width: 50px;
-    height:50px;
-    display: inline-block;
-    padding: 5px;
-}
-
-/* -------------------- Next Page CSS ---------------------- */
-
-li:hover {
-    color:cadetblue;
-    text-decoration: underline;
-}
-
-.negative-margin{
-    display: inline-block;
-    padding-left:10px"
-}
-
-.neg-margin-pos {
-    position:absolute; 
-    right:5%;
-    top:70%
+    .button.italic-text {
+        font-weight: lighter;
+        text-transform: lowercase;
+        color: brown;
+    }
 }

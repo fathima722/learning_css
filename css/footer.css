@@ -1,0 +1,43 @@
+/* ------------------ Footer styles -----------------*/
+/* adding background color with opacity to footer and adding flex-direction column */
+@media (min-width:860px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+footer {
+    color: black;
+    background: rgba(22, 21, 21, 0.5);
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+a {
+    color: black;
+}
+
+#socials {
+    list-style-type: none; /*This will remove the bullet styles on our list items */
+}
+
+.logo {
+    width: 32px;
+    height:32px;
+    margin: 5px;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
